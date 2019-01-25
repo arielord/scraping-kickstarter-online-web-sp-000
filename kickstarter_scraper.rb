@@ -5,6 +5,7 @@ def create_project_hash
   # write your code here
   html = File.read('fixtures/kickstarter.html')
   kickstarter = Nokogiri::HTML(html)
+<<<<<<< HEAD
     projects = {}
  
   kickstarter.css("li.project.grid_4").each do |project|
@@ -18,4 +19,6 @@ def create_project_hash
   end
   
   projects
+=======
+>>>>>>> 2fd25269e77038f981c29a471ffc54d1a7c76293
 end
